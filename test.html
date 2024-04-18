@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Photo</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #upload-wrapper {
+        margin-top: 50px;
+    }
+    #photo-preview {
+        margin-top: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #ccc;
+        display: none;
+    }
+    #photo-preview img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<div id="upload-wrapper">
+    <input type="file" id="photo-input" accept="image/*">
+    <button onclick="uploadPhoto()">Upload Photo</button>
+</div>
+
+<div id="photo-preview">
+    <img id="preview-image" src="#" alt="Uploaded Photo">
+</div>
+
+<script>
+    function uploadPhoto() {
+        var input = document.getElementById('photo-input');
+        var preview = document.getElementById('photo-preview');
+        var previewImage = document.getElementById('preview-image');
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                previewImage.src = e.target.result;
+                preview.style.display = 'block';
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+</body>
+</html>
