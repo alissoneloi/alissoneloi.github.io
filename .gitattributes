@@ -1,0 +1,56 @@
+# === Normalização de fim de linha (universal, recomendado para multiplataforma) ===
+* text=auto
+
+# Forçar arquivos de script como texto (útil para Bash, Python, SQL)
+*.sh   text eol=lf
+*.sql  text eol=lf
+*.py   text eol=lf
+
+# Forçar arquivos batch como texto (caso trabalhe com .bat, .cmd)
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Arquivos XML/JRXML do JasperReports como texto (bom para evitar conflitos)
+*.xml  text eol=lf
+*.jrxml text eol=lf
+
+# Arquivos de configuração como texto
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.ini  text eol=lf
+
+# Postman/SoapUI configs como texto
+*.postman_collection.json text eol=lf
+*.postman_environment.json text eol=lf
+*.soapui-settings.xml text eol=lf
+
+# Tratamento de arquivos binários (não tentar diff/merge!)
+*.jar  binary
+*.war  binary
+*.ear  binary
+*.class binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.tar  binary
+*.7z   binary
+*.db   binary
+*.sqlite binary
+
+# JasperReports compilado/binary
+*.jasper binary
+*.jrprint binary
+
+# Por padrão, não tratar arquivos do FreeFileSync e Obsidian como texto
+.sync.ffs_db binary
+.obsidian/* text eol=lf
+
+# Exemplo: forçar arquivos Markdown como texto (bom para colaboração)
+*.md text eol=lf
+
+# DBeaver arquivos XML como texto
+*.dbeaver* text eol=lf

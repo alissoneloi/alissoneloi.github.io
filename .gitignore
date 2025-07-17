@@ -1,0 +1,115 @@
+# ===== macOS/System =====
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+*.icloud
+._*
+Icon?
+Thumbs.db
+ehthumbs.db
+
+# ===== VS Code =====
+.vscode/
+.history/
+
+# ===== JetBrains IDEs (IntelliJ IDEA, PyCharm, etc) =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== DBeaver =====
+.dbeaver-data-sources.xml
+.dbeaver-drivers.xml
+.dbeaver/
+
+# ===== Postman =====
+postman_environment*.json
+postman_collection*.json
+*.postman_collection.json
+*.postman_environment.json
+# (Remova se quiser versionar coleções/envs!)
+
+# ===== SoapUI =====
+*.soapui
+*.soapui.log
+*.soapui-errors.log
+*.soapui-settings.xml
+# (Remova se quiser versionar configs do SoapUI)
+
+# ===== JasperReports =====
+*.jasper
+*.jrprint
+*.jrxml~
+*.backup
+.cache/
+
+# ===== FreeFileSync =====
+.sync.ffs_db
+.ffs_lock
+.ffs_tmp*
+.sync.ffs_gui_log
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== Node.js =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Java =====
+*.class
+*.jar
+*.war
+*.ear
+*.log
+target/
+bin/
+build/
+
+# ===== SQL/Database =====
+*.sqlite
+*.db
+*.sql~
+/database_backup/
+*.bak
+
+# ===== Misc/Editor/OS/Backup =====
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+.cache/
+log/
+logs/
+tmp/
+._*
+
+# ===== Obsidian (se usar dentro do cofre) =====
+.obsidian/
+.obsidian-*
+.obsidian-backup/
+.obsidian-tasks/
+.obsidian-workspace.json
