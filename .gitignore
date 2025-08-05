@@ -1,3 +1,6 @@
+# ===== Ambient =====
+.env
+
 # ===== macOS/System =====
 .DS_Store
 .AppleDouble
